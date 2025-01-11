@@ -1,4 +1,4 @@
-package com.Lee.doit;
+package com.Lee.doit.시간복잡도;
 
 import java.util.Arrays;
 import java.util.Scanner;

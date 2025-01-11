@@ -1,4 +1,4 @@
-package com.Lee.doit;
+package com.Lee.doit.시간복잡도;
 
 public class 시간복잡도정의하기 {
     public static void main(String[] args) {
