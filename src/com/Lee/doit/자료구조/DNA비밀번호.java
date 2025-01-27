@@ -12,17 +12,17 @@ public class DNA비밀번호 {
         int length = Integer.parseInt(st.nextToken());
         int P = Integer.parseInt(st.nextToken());
 
-        // 두 번째 줄: DNA 문자열 S
+        // DNA 문자열 S
         String S = br.readLine();
 
-        // 세 번째 줄: 각 문자의 최소 개수 (A, C, G, T 순서)
+        // 각 문자의 최소 개수
         st = new StringTokenizer(br.readLine());
         int[] minCounts = new int[4];
         for (int i = 0; i < 4; i++) {
             minCounts[i] = Integer.parseInt(st.nextToken());
         }
 
-        // 슬라이딩 윈도우를 위한 현재 문자 개수
+        // 슬라이딩 윈도우
         int[] currentCounts = new int[4];
         for (int i = 0; i < P; i++) {
             addCount(S.charAt(i), currentCounts);
@@ -34,7 +34,7 @@ public class DNA비밀번호 {
             validCount++;
         }
 
-        // 슬라이딩 윈도우 방식으로 확인
+        // 슬라이딩 윈도우
         for (int i = P; i < length; i++) {
 
             addCount(S.charAt(i), currentCounts);
